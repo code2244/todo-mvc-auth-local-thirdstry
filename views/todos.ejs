@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1>Things To Do List</h1>
+    <ul>
+    <container class="container title-card"> 
+        <% todos.forEach( el => { %>
+                <li class='todoItem' data-id='<%=el._id%>'>
+                    <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                    <span class='del'> Delete </span>
+                </li>
+        <% }) %>    
+        </ul>
+
+        <h2><%= user.userName %> has added <%= left %> things to do.</h2>
+    </container>
+    
+    
+        <form action="/todos/createTodo" method='POST'>
+            <input type="text" placeholder="Enter Location" name='todoItem'>
+            <input type="submit">
+        </form>
+
+
+
+
+    <br><br>
+    <span>Choose your background color</span>
+    <br><br>
+    <!-- choose fav color -->
+    <select class="form-control" onchange="changeColor(this)">
+        <option value="yellow">Yellow</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <span class="dashboard">
+        <a href="/dashboard.ejs">Dashboard</a>
+    </span>
+
+    <!-- <a href="/logout">Logout</a> -->
+
+    <span class="logout">
+        <a href="/logout">Logout</a>
+    </span>
+    <script src="js/main.js"></script>
+</body>
+</html>

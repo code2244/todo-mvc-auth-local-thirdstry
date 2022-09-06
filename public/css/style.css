@@ -1,0 +1,103 @@
+* {box-sizing: border-box;
+}
+* {
+    /*outline: solid 1px red;*/
+}
+
+h1, h2{
+    font-size: 25px;
+	font-weight: 300;
+	margin: 10px 0 0 0;
+	font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 2em;
+}
+
+body{
+	width: 50%;
+	margin: 0 auto;
+    background: linear-gradient(to right, rgb(11, 191, 160), rgb(108, 196, 115));
+}
+
+form{
+	display: flex;
+	justify-content: center;
+}
+
+.del {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+	flex-direction: column;
+}
+
+
+.del:hover{
+	background: linear-gradient(to right, rgb(11, 191, 160), rgb(108, 196, 115));
+	opacity: 0.9;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.not{
+    text-decoration: underline;
+}
+
+
+
+
+li {
+    display: flex;
+    list-style: none;
+    margin-top: 1rem;
+	justify-content: space-between;
+}
+
+.userlogin{
+    width: 100%;
+	color: #fff;
+	padding:17px 50px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 20px;
+	transition: all 0.3s linear;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	background: linear-gradient(to left, rgb(11, 191, 160), rgb(108, 196, 115));
+	opacity: 1;
+}
+
+.userlogin:hover{
+    background: linear-gradient(to right, rgb(11, 191, 160), rgb(108, 196, 115));
+	opacity: 0.9;
+}
+
+.logout, .dashboard{
+    display: inline-flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+.logout:hover{
+	background: linear-gradient(to right, rgb(11, 191, 160), rgb(108, 196, 115));
+	opacity: 0.9;
+} 
+
+.container .title-card {
+	font-size: 25px;
+	font-weight: 100;
+	margin: 10px 0 0 0;
+	font-family: 'Raleway', sans-serif;
+}
+
