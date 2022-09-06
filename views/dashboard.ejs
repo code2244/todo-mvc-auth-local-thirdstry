@@ -7,17 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 <body>
     <h1>Public Dashboard</h1>
 
-    <ul class="todoItem">
-        <% todos.forEach( el => { %>
-            <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
-                <span class='del'> Delete </span>
-            </li>
-    <% }) %>    
-      </ul>
+   
 
     <!-- <a href="/logout">Logout</a> -->
     
